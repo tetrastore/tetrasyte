@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TetraStore - Perlengkapan Baju Terbaik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>TetraStore</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="openAboutUsModal">Tentang Kami</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="promotion-banner-container">
+        <div class="slider-wrapper">
+            <div class="promotion-slider" id="promotion-slider">
+                </div>
+            <button class="slider-button prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-button next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots" id="slider-dots">
+                </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="controls-section" id="products-section">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cari produk baju...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="categories-filter" id="categories-filter">
+                <button class="category-button active" data-category="Semua">Semua</button>
+                <button class="category-button" data-category="Topi">Topi</button>
+                <button class="category-button" data-category="Jaket">Jaket</button>
+                <button class="category-button" data-category="Baju">Baju</button>
+                <button class="category-button" data-category="Celana">Celana</button>
+            </div>
+        </section>
+
+        <section class="products-grid" id="products">
+            </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Anda dapat menghubungi kami melalui:</p>
+        <ul>
+            <li>Email: <a href="mailto:info@tetrastore.com">info@tetrastore.com</a></li>
+            <li>Telepon: <a href="tel:+6281234567890">0812-3456-7890</a></li>
+            <li>Alamat: Jl. Contoh No. 123, Katapang, Jawa Barat, Indonesia</li>
+        </ul>
+        <p>&copy; 2025 TetraStore. All rights reserved.</p>
+    </footer>
+
+    <div id="productDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeProductDetail()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image-gallery">
+                    <div class="gallery-main-image">
+                        <img id="modalMainImage" src="" alt="Product Image">
+                    </div>
+                    <div class="gallery-thumbnails" id="modalThumbnails">
+                        </div>
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalProductName"></h2>
+                    <p class="modal-product-price" id="modalProductPrice"></p>
+                    <p class="modal-product-stock" id="modalProductStock"></p>
+                    <p id="modalProductDescription"></p>
+                    <button class="whatsapp-button" id="buyViaWhatsapp">
+                        <i class="fab fa-whatsapp"></i> Beli via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutUsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeAboutUsModal()">&times;</span>
+            <div class="about-us-content">
+                <h2>Tentang TetraStore</h2>
+                <p>Selamat datang di TetraStore, destinasi utama Anda untuk fashion berkualitas dan gaya terkini! Kami berdiri sejak tahun 2020 dengan misi menyediakan pilihan pakaian yang beragam, mulai dari streetwear kasual hingga outfit semi-formal, yang dirancang untuk meningkatkan kepercayaan diri Anda setiap hari.</p>
+                <p>Kami percaya bahwa fashion adalah ekspresi diri. Oleh karena itu, TetraStore berkomitmen untuk menghadirkan produk-produk pilihan yang tidak hanya mengikuti tren, tetapi juga mengutamakan kualitas, kenyamanan, dan keberlanjutan. Setiap item yang kami tawarkan telah melalui proses kurasi ketat untuk memastikan Anda mendapatkan yang terbaik.</p>
+                <h3>Visi Kami</h3>
+                <p>Menjadi toko pakaian online terdepan yang menginspirasi individu untuk mengekspresikan gaya unik mereka dengan pakaian berkualitas tinggi dan bertanggung jawab.</p>
+                <h3>Misi Kami</h3>
+                <ul>
+                    <li>Menyediakan koleksi pakaian yang beragam, inovatif, dan sesuai dengan tren terkini.</li>
+                    <li>Menjaga standar kualitas produk yang tinggi dan memastikan kenyamanan pelanggan.</li>
+                    <li>Membangun komunitas fashion yang positif dan inklusif.</li>
+                    <li>Memberikan pengalaman belanja online yang mudah, aman, dan menyenangkan.</li>
+                </ul>
+                <p>Terima kasih telah memilih TetraStore sebagai mitra gaya Anda. Kami sangat antusias untuk menjadi bagian dari perjalanan fashion Anda!</p>
+                <p>Hormat kami,<br>Tim TetraStore</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
