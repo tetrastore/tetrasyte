@@ -75,18 +75,19 @@ const productsData = [
         ]
     },
     {
-        id: 7,
-        name: "Topi Rimba Outdoor",
-        category: "Topi",
-        stock: 7,
-        price: 95000,
-        description: "Topi rimba multifungsi untuk kegiatan outdoor. Melindungi dari sinar matahari dan hujan, dengan tali pengikat yang bisa disesuaikan.",
+        id: 8, // ID harus unik dan berurutan
+        name: "Sweater Hoodie Polos",
+        category: "Baju", // Sesuaikan dengan kategori yang ada atau tambahkan kategori baru jika perlu
+        stock: 100,
+        price: 180000,
+        description: "Sweater hoodie polos dengan bahan fleece lembut, nyaman dipakai sepanjang hari. Cocok untuk pria dan wanita, tersedia dalam berbagai warna.",
         images: [
-            "https://via.placeholder.com/600x400/222/888?text=Topi+Rimba+1",
-            "https://via.placeholder.com/600x400/111/777?text=Topi+Rimba+2"
+            "https://via.placeholder.com/600x400/999/EEE?text=Sweater+Hoodie+1", // Ganti dengan URL gambar asli Anda
+            "https://via.placeholder.com/600x400/AAA/FFF?text=Sweater+Hoodie+2", // Tambahkan lebih banyak gambar jika ada
+            "https://via.placeholder.com/600x400/BBB/DDD?text=Sweater+Hoodie+3"
         ]
     }
-];
+]
 
 // Data Banner Slider
 const bannerSlides = [
