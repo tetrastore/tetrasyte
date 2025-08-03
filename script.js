@@ -2,7 +2,7 @@
 const productsData = [
     {
         id: 1,
-        name: "Crewneck Rebook",
+        name: "Crewneck Reebok",
         category: "Baju",
         stock: 1,
         price: 95000,
@@ -387,3 +387,4 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSlider();
     window.addEventListener('resize', updateSliderPosition);
 });
+
