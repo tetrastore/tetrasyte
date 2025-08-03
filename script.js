@@ -2,89 +2,61 @@
 const productsData = [
     {
         id: 1,
-        name: "Jaket Bomber Urban",
-        category: "Jaket",
-        stock: 5,
-        price: 350000,
-        description: "Jaket bomber modern dengan desain urban. Terbuat dari bahan berkualitas tinggi, cocok untuk gaya kasual sehari-hari dan memberikan kehangatan optimal.",
+        name: "Crewneck Rebook",
+        category: "Baju",
+        stock: 1,
+        price: 95000,
+        description: "Jaket Rebook Original Second, no minus, no cacat, no baret",
         images: [
-            "https://via.placeholder.com/600x400/888/FFF?text=Jaket+Bomber+1",
-            "https://via.placeholder.com/600x400/777/DDD?text=Jaket+Bomber+2",
-            "https://via.placeholder.com/600x400/666/CCC?text=Jaket+Bomber+3"
+            "Produk 1.jpg",
+            "Produk 1 belakang.jpg",
         ]
     },
     {
         id: 2,
-        name: "Topi Baseball Klasik",
-        category: "Topi",
-        stock: 0, // STOK HABIS
-        price: 85000,
-        description: "Topi baseball gaya klasik yang nyaman dipakai. Terbuat dari katun berkualitas dengan desain minimalis, cocok untuk melengkapi penampilan sporty Anda.",
+        name: "Vintage Nike",
+        category: "Jaket",
+        stock: 1, // STOK HABIS
+        price: 110000,
+        description: "Jaket Origial Nike Second, ada pertanyaan? klik logo WhatsApp di bawah.",
         images: [
-            "https://via.placeholder.com/600x400/777/DDD?text=Topi+Baseball+1",
-            "https://via.placeholder.com/600x400/666/CCC?text=Topi+Baseball+2"
+            "Produk 2.jpg",
+            "Produk 2 Belakang.jpg"
         ]
     },
     {
         id: 3,
-        name: "Kaos Distro Original",
-        category: "Baju",
-        stock: 12,
-        price: 120000,
-        description: "Kaos distro original dengan desain unik dan bahan katun combed 30s yang lembut dan menyerap keringat. Ideal untuk aktivitas sehari-hari.",
+        name: "Nike Sport Swear",
+        category: "Jaket",
+        stock: 1,
+        price: 35000,
+        description: "Info lengkap lebih lanjut klik logo WhatsApp di bawah.",
         images: [
-            "https://via.placeholder.com/600x400/666/CCC?text=Kaos+Distro+1",
-            "https://via.placeholder.com/600x400/555/BBB?text=Kaos+Distro+2",
-            "https://via.placeholder.com/600x400/444/AAA?text=Kaos+Distro+3"
+            "Nike 1,.jpg",
+            "Nike 1,2.jpg",
         ]
     },
     {
         id: 4,
-        name: "Celana Chino Slim Fit",
-        category: "Celana",
-        stock: 8,
-        price: 220000,
-        description: "Celana chino slim fit yang nyaman dan stylish. Cocok untuk tampilan kasual maupun semi-formal. Tersedia dalam berbagai ukuran.",
+        name: "Vintage Playboy",
+        category: "Jaket",
+        stock: 1,
+        price: 160000,
+        description: "Info lengkap klik logo WhatsApp.",
         images: [
-            "https://via.placeholder.com/600x400/555/BBB?text=Celana+Chino+1",
-            "https://via.placeholder.com/600x400/444/AAA?text=Celana+Chino+2"
+            "Playboy.jpg",
+            "Playboy 2.jpg"
         ]
     },
     {
         id: 5,
-        name: "Jaket Parka Musim Dingin",
+        name: "Jaket SKI",
         category: "Jaket",
-        stock: 0, // STOK HABIS
-        price: 480000,
-        description: "Jaket parka tebal yang dirancang untuk cuaca dingin ekstrem. Tahan air dan angin, dengan banyak saku fungsional. Gaya dan perlindungan dalam satu jaket.",
+        stock: 1, // STOK HABIS
+        price: 30000,
+        description: "Jaket warna orange, info lebih lengkap klik logo WhatsApp.",
         images: [
-            "https://via.placeholder.com/600x400/444/AAA?text=Jaket+Parka+1",
-            "https://via.placeholder.com/600x400/333/999?text=Jaket+Parka+2"
-        ]
-    },
-    {
-        id: 6,
-        name: "Kemeja Flanel Casual",
-        category: "Baju",
-        stock: 15,
-        price: 150000,
-        description: "Kemeja flanel lembut dengan motif kotak-kotak klasik. Ideal untuk gaya santai atau layering. Tersedia dalam berbagai warna.",
-        images: [
-            "https://via.placeholder.com/600x400/333/999?text=Kemeja+Flanel+1",
-            "https://via.placeholder.com/600x400/222/888?text=Kemeja+Flanel+2"
-        ]
-    },
-    {
-        id: 8, // ID harus unik dan berurutan
-        name: "Sweater Hoodie Polos",
-        category: "Baju", // Sesuaikan dengan kategori yang ada atau tambahkan kategori baru jika perlu
-        stock: 100,
-        price: 180000,
-        description: "Sweater hoodie polos dengan bahan fleece lembut, nyaman dipakai sepanjang hari. Cocok untuk pria dan wanita, tersedia dalam berbagai warna.",
-        images: [
-            "https://via.placeholder.com/600x400/999/EEE?text=Sweater+Hoodie+1", // Ganti dengan URL gambar asli Anda
-            "https://via.placeholder.com/600x400/AAA/FFF?text=Sweater+Hoodie+2", // Tambahkan lebih banyak gambar jika ada
-            "https://via.placeholder.com/600x400/BBB/DDD?text=Sweater+Hoodie+3"
+            "Produk 4.jpg",
         ]
     }
 ]
@@ -93,15 +65,7 @@ const productsData = [
 const bannerSlides = [
     {
         id: 1,
-        image: "https://via.placeholder.com/1200x375/222/DDD?text=Koleksi+Terbaru+TetraStore+(16:5)"
-    },
-    {
-        id: 2,
-        image: "https://via.placeholder.com/1200x375/333/CCC?text=Diskon+Up+To+70+Persen+(16:5)"
-    },
-    {
-        id: 3,
-        image: "https://via.placeholder.com/1200x375/444/BBB?text=Gratis+Pengiriman+Minimal+100rb+(16:5)"
+        image: "Banner.png"
     }
 ];
 
@@ -135,7 +99,7 @@ let currentSlideIndex = 0;
 let startX = 0;
 let endX = 0;
 
-const whatsappNumber = "6281234567890"; // Ganti dengan nomor WhatsApp Anda
+const whatsappNumber = "628889377344"; // Ganti dengan nomor WhatsApp Anda
 
 let activeCategory = "Semua";
 let searchQuery = "";
